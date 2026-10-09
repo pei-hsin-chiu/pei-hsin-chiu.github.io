@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pei-Hsin Chiu - Data Science, Machine Learning, and Healthcare AI">
+  <title>Pei-Hsin Chiu | Data Science & Machine Learning</title>
+  <style>
+    :root {
+      --bg: #fafbfc;
+      --white: #ffffff;
+      --text: #1d2939;
+      --muted: #667085;
+      --accent: #2563eb;
+      --border: #e5e9ef;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; padding: 0 24px; }
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .brand { font-weight: 700; color: var(--text); }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 20px; }
+    .nav-links a { color: var(--muted); font-size: 14px; }
+    .hero { padding: 105px 0 85px; }
+    .eyebrow { color: var(--accent); font-weight: 600; }
+    h1 { font-size: clamp(38px, 7vw, 60px); line-height: 1.15; margin: 14px 0; }
+    .subtitle { font-size: 21px; color: var(--muted); }
+    .intro { max-width: 740px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--text);
+      font-weight: 500;
+    }
+    .button.primary { background: var(--accent); color: white; }
+    section { padding: 38px 0 55px; scroll-margin-top: 90px; }
+    h2 { font-size: 29px; margin-bottom: 20px; }
+    h3 { margin: 0 0 10px; font-size: 19px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 4px 4px 4px 0;
+    }
+    .muted { color: var(--muted); }
+    .publication {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .publication:last-child { border-bottom: none; }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 28px 0;
+    }
+    @media (max-width: 700px) {
+      .hero { padding: 65px 0; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home">Pei-Hsin Chiu</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container hero" id="home">
+      <div class="eyebrow">Hello, I'm</div>
+      <h1>Pei-Hsin Chiu (Cindy)</h1>
+      <p class="subtitle">Data Science | Machine Learning | Healthcare AI</p>
+      <p class="intro">
+        I'm a Ph.D. candidate in Electrical and Computer Engineering
+        at the University of Iowa, expecting to graduate in May 2027.
+        My work focuses on machine learning, interpretable AI,
+        predictive modeling, and computational approaches to healthcare.
+      </p>
+      <div class="links">
+        <a class="button primary" href="#projects">Explore Projects</a>
+        <a class="button" href="https://github.com/pei-hsin-chiu">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/pei-hsin-chiu/">LinkedIn</a>
+        <a class="button" href="https://scholar.google.com/citations?user=Dj1HDEkAAAAJ">Google Scholar</a>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <p>
+        I develop and evaluate machine learning models for complex
+        biomedical data, combining deep learning, statistical analysis,
+        and domain-specific computational methods.
+      </p>
+      <p>
+        My research experience includes interpretable representation
+        learning for glaucoma OCT imaging, longitudinal disease
+        progression modeling, clinical risk prediction using EHR data,
+        and medical image classification.
+      </p>
+      <p>
+        I am interested in translating research methods into
+        practical data science and machine learning applications.
+      </p>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Programming & Data Analysis</h3>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+        </div>
+        <div class="card">
+          <h3>Machine Learning</h3>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">Regression</span>
+          <span class="tag">Classification</span>
+        </div>
+        <div class="card">
+          <h3>Deep Learning</h3>
+          <span class="tag">PyTorch</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">VAEs</span>
+        </div>
+        <div class="card">
+          <h3>Research & Analytics</h3>
+          <span class="tag">Statistical Analysis</span>
+          <span class="tag">Time-Series Forecasting</span>
+          <span class="tag">Model Evaluation</span>
+          <span class="tag">Interpretable AI</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Pediatric Pneumonia Prediction</h3>
+          <p class="muted">
+            Published research on respiratory pathogen prediction
+            and ICU mortality risk assessment using structured
+            clinical data and machine learning.
+          </p>
+          <span class="tag">XGBoost</span>
+          <span class="tag">Random Forest</span>
+          <span class="tag">EHR</span>
+          <p><a href="https://github.com/pei-hsin-chiu/pediatric-pneumonia-machine-learning">View Research →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Supraspinatus Ultrasound Classification</h3>
+          <p class="muted">
+            Published deep learning research on ultrasound image
+            classification using CNNs, transfer learning,
+            and Grad-CAM interpretation.
+          </p>
+          <span class="tag">CNN</span>
+          <span class="tag">Transfer Learning</span>
+          <span class="tag">Grad-CAM</span>
+          <p><a href="https://github.com/pei-hsin-chiu/ML-against-supraspinatus-calcific-tendinopathy">View Research →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Interpretable VAE for Glaucoma OCT</h3>
+          <p class="muted">
+            Attribute-guided variational autoencoder research
+            for interpretable latent representations
+            of retinal OCT thickness maps.
+          </p>
+          <span class="tag">PyTorch</span>
+          <span class="tag">VAE</span>
+          <span class="tag">Interpretable AI</span>
+          <p class="muted">Research overview coming soon.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="container">
+      <h2>Selected Publications</h2>
+
+      <div class="publication">
+        <h3>Machine learning models to evaluate mortality in pediatric patients with pneumonia in the intensive care unit</h3>
+        <p class="muted">Pediatric Pulmonology · 2024</p>
+        <a href="https://doi.org/10.1002/ppul.26897">Read Paper →</a>
+      </div>
+
+      <div class="publication">
+        <h3>Clinical characteristics of hospitalized children with community-acquired pneumonia and respiratory infections: Using machine learning approaches to support pathogen prediction at admission</h3>
+        <p class="muted">Journal of Microbiology, Immunology and Infection · 2023</p>
+        <a href="https://doi.org/10.1016/j.jmii.2023.04.011">Read Paper →</a>
+      </div>
+
+      <div class="publication">
+        <h3>Deep Learning for Detecting Supraspinatus Calcific Tendinopathy on Ultrasound Images</h3>
+        <p class="muted">Journal of Medical Ultrasound · 2022</p>
+        <a href="https://doi.org/10.4103/jmu.jmu_182_21">Read Paper →</a>
+      </div>
+
+      <p><a href="https://scholar.google.com/citations?user=Dj1HDEkAAAAJ">View all publications on Google Scholar →</a></p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <p>
+        I'm interested in opportunities in Data Science,
+        Machine Learning, and Applied AI.
+      </p>
+      <div class="links">
+        <a class="button" href="https://www.linkedin.com/in/pei-hsin-chiu/">LinkedIn</a>
+        <a class="button" href="https://github.com/pei-hsin-chiu">GitHub</a>
+        <a class="button" href="https://scholar.google.com/citations?user=Dj1HDEkAAAAJ">Google Scholar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© Pei-Hsin Chiu · Built with GitHub Pages</div>
+  </footer>
+</body>
+</html>
